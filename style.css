@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+}
+
+.card {
+  width: 1100px;
+  height: 446px;
+  border-radius: 10px; 
+  display: flex;
+  overflow: hidden;
+  background: hsl(244, 38%, 16%);
+  margin: 160px auto 0;
+}
+
+.card__content {
+  width: 570px;
+  height: 446px;
+  padding: 70px 110px 66px 70px;
+}
+
+.card__content__heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 25px;
+}
+
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.card__content__description {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 70px;
+}
+
+.card__content__stats {
+  display: flex;
+  width: 348px;
+}
+
+.statbox {
+  margin-right: 60px;
+}
+
+.statbox h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.statbox p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card__img-container {
+  width: 530px;
+  float: right;
+  background: linear-gradient(hsla(277, 100%, 30%, 0.5),hsla(277, 100%, 30%, 0.5)), url(image-header-desktop.jpg)
+}
+
+/* For screens with a width of 375 pixels and smaller. */
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 780px;
+    border-radius: 7px; 
+    overflow: hidden;
+    margin-top: 88px;
+    background: hsl(244, 38%, 16%);
+  }
+
+  .card__content {
+    width: 280px;
+    height: 470px;
+    padding: 35px 10px;
+    margin: 246px auto 0;
+  }
+  
+  .card__content__heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .card__content__description {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.65;
+    margin-bottom: 40px;
+  }
+
+  .card__content__stats {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .statbox {
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+
+  .statbox h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: hsla(0, 0%, 100%, 1);
+  }
+  
+  .statbox p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+  }
+
+  .card__img-container {
+    width: 327px;
+    height: 240px;
+    position: absolute;
+    border-radius: 7px 7px 0 0;
+    background: linear-gradient(hsla(277, 100%, 30%, 0.5),hsla(277, 100%, 30%, 0.5)), url(image-header-mobile.jpg);
+    background-size: contain;
+}
+
+}
+
+/* Attribution styling */
+.attribution {
+  margin-top: 20px;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
